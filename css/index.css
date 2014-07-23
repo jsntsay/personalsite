@@ -1,0 +1,212 @@
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+abbr,acronym { border: 0;
+}
+
+/* Page CSS */
+
+/* Screw rounded corners */
+/*
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+*/
+
+/* General Page CSS */
+
+body{
+	/*background: #ebeae6 url(../img/lines-wallpaper-aqua.gif) top left repeat;*/
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+section {
+	min-width: 960px;
+}
+
+/* Profile Section CSS */
+
+#profilesection {
+	background: #ebeae6 url(../img/p3pstyle.png);
+}
+
+#name {
+	top: 10px;
+	position: relative;
+	font-weight: bold;
+	font-size: 4em;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.offset {
+	display: block;
+	position: relative;
+}
+
+h1.offset {
+	left: 100px;
+}
+
+h3.offset {
+	left: 102px;
+}
+
+h4.offset {
+	left: 55px;
+}
+
+ul#vmenu {
+	color: white;
+	font-size: 2em;
+	list-style-type: square;
+	z-index: 2;
+	position: relative;
+	left: 50px;
+	padding-top: 20px;
+}
+
+ul#vmenu > li {
+	padding-left: 50px;
+	width: 350px;
+}
+
+ul#vmenu > li.selected {
+	background: #333;
+}
+
+ul#sociallinks {
+	list-style-type: none;
+	z-index: 2;
+	position: absolute;
+	left: 15px;
+	bottom: 10px;
+	min-height: 100px;
+}
+
+ul#sociallinks > li {
+    padding-bottom: 15px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+	opacity: 0.7;
+}
+
+.sidebar {
+	background: #333;
+	height: 100%;
+	width: 65px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.fullheight {
+	height: 100%;
+}
+
+.moveup {
+	top: 200px;
+}
+
+.sidebox {
+	display: block;
+	position: absolute;
+	width: 50%;
+	min-width: 500px;
+	min-height: 250px;
+	bottom: 25px;
+	right: 20px;
+	overflow: hidden;
+}
+
+.avatar {
+	background-color: white;
+    padding: 2px;
+    opacity: 1.0;
+	width: 200px;
+	height: 200px;
+	float: right;
+}
+
+.infobox {
+	background-color: white;
+	display: block;
+	max-height: 200px;
+	opacity: 0.8;
+	padding: 10px;
+	float: right;
+}
+
+/* Other Sections CSS */
+
+#worksection {
+	background: white;
+}
+
+#resumesection {
+	background: gray;
+}
+
+#pubsection {
+	background: red;
+}
+
+.headerbar {
+	background: #333;
+	height: 50px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+ul#hmenu {
+	color: white;
+	font-size: 2em;
+	list-style-type: none;
+	z-index: 2;
+	position: relative;
+	padding-top: 5px;
+}
+
+ul#hmenu > li {
+	display: inline;
+	width: 350px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.hselected {
+	background: black;
+}
