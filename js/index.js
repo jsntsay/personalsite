@@ -4,7 +4,23 @@ $(document).ready(function() {
 		paddingTop: 0,
 		resize: false,
 		anchors:['profile','work','resume','publications'],
-		scrollingSpeed: 400
+		scrollingSpeed: 400,
+        afterLoad: function(anchorLink, index) {
+            console.log(anchorLink);
+            $("ul.nav li").removeClass("active");
+            switch(anchorLink) {
+                case "work":
+                    $(".worknav").addClass("active");
+                    break;
+                case "resume":
+                    $(".resumenav").addClass("active");
+                    break;
+                case "publications":
+                    $(".pubsnav").addClass("active");
+                    break;
+                    
+            }
+        }
 	});
 	forcePosition();
 	

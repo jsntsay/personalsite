@@ -1,3 +1,7 @@
+---
+title: Jason Tsay
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,26 +64,17 @@
 				</div>
 			</div>
 		</div>
-		<div id="worksection" class="section" data-anchor="work">
-			<div class="headerbar">
-				<ul id="hmenu" class="nav">
-					<li> Profile </li>
-					<li class="hselected"> Work </li>
-					<li> Resume </li>
-					<li> Publications </li>
-				</ul>
-			</div>
+        <div id="worksection" class="section" data-anchor="work">
+            {% include navbar.html %}
 			<h2>Current Work</h2>
 		</div>
 		<div id="resumesection" class="section" data-anchor="resume">
-			<div class="headerbar">
-			</div>
+            {% include navbar.html %}
 			<h2>Resume</h2>
 		</div>
 		<div id="pubsection" class="section" data-anchor="publications">
-			<div class="headerbar">
-			</div>
-			<h2>Publications</h2>
+            {% include navbar.html %}
+            {% include pubs.html %}
 		</div>
 	</div>
 </body>
