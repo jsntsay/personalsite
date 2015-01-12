@@ -161,6 +161,7 @@ ul#sociallinks > li {
 
 .infobox {
 	background-color: white;
+    font-size: 1.2em;
 	display: block;
 	max-height: 200px;
 	opacity: 0.8;
@@ -211,25 +212,13 @@ ul#hmenu > li {
 	background: black;
 }
 
-.nav-justified {
-  background-color: #222;
+ul#publist {
+    list-style-type: square;
+    padding-left: 50px;
 }
-.nav-justified > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 0;
-  color: white;
-  font-size: 1.5em;
-  text-align: center;
-  background-color: #222; *u` Old browsers */
-}
-.nav-justified > .active > a,
-.nav-justified > .active > a:hover,
-.nav-justified > .active > a:focus {
-  background-color: #333;
-  background-image: none;
-}
-.nav-justified > li > a:hover,
-.nav-justified > li > a.focus {
-  background-color: #666;
+
+ul#publist > li {
+    font-size: 1.2em;
+    padding-top: 20px;
+    paddihg-left: 5px;
 }

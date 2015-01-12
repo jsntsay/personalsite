@@ -4,78 +4,62 @@ title: Jason Tsay
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-    <title>whatever</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/jquery.fullPage.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
-	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script src="js/index.js"></script>
-</head>
+    <head>
+        {% include includes.html %}
+        <title>Jason Tsay</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/jquery.fullPage.css">
+        <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
 
-<body>
-	<div id="fullpage">
-		<div id="profilesection" class="section" data-anchor="profile">
-			<div class="sidebar">
-			</div>
-			<h1 id="name" class="offset"> Jason Tsay </h1>
-			<h3 id="email" class="offset">jtt<a href="http://www.google.com/recaptcha/mailhide/d?k=01f1EnTmGoE9mi37OKJxVNqw==&amp;c=dPlxcgu_gS7R-gdjjroB3Q==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501f1EnTmGoE9mi37OKJxVNqw\75\75\46c\75dPlxcgu_gS7R-gdjjroB3Q\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@jsntsay.com</h3>
-			<ul id="vmenu">
-				<li class="selected" id="profilebutton">Profile</li>
-				<li id="workbutton"> Work </li>
-				<li id="resumebutton"> Resume </li>
-				<li id="pubbutton"> Publications </li>
-			</ul>
-			<ul id="sociallinks">
-				<li><a href="https://twitter.com/jsntsay"><img src="img/twitter.png" class="icon"></a></li>
-				<li><a href="https://github.com/jsntsay"><img src="img/github.png" class="icon"></a></li>
-				<li><a href="http://www.linkedin.com/pub/jason-tsay/17/0/122"><img src="img/linkedin.png" class="icon"></a></li>
-				<li><a href="https://plus.google.com/101105323702916978865"><img src="img/googleplus.jpg" class="icon"></a></li>
-				<li><a href="https://www.facebook.com/jsntsay"><img src="img/fb.png" class="icon"></a></li>
-			</ul>
-			<div class="sidebox">
-				<div class="avatar">
-					<img src="img/avatar.png" id="avatar" class="img-responsive" alt="Nanami desu!">
-				</div>
-				<div class="infobox">
-					<!-- start slipsum code -->
-
-					<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
-
-					<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>
-					<!-- please do not remove this line -->
-
-					<div style="display:none;">
-					<a href="http://slipsum.com">lorem ipsum</a></div>
-
-					<!-- end slipsum code -->
-				</div>
-			</div>
-		</div>
-        <div id="worksection" class="section" data-anchor="work">
-            {% include navbar.html %}
-			<h2>Current Work</h2>
-		</div>
-		<div id="resumesection" class="section" data-anchor="resume">
-            {% include navbar.html %}
-			<h2>Resume</h2>
-		</div>
-		<div id="pubsection" class="section" data-anchor="publications">
-            {% include navbar.html %}
-            {% include pubs.html %}
-		</div>
-	</div>
-</body>
+    <body>
+        <div id="fullpage">
+            <div id="profilesection" class="section" data-anchor="profile">
+                <div class="sidebar">
+                </div>
+                <h1 id="name" class="offset"> Jason Tsay </h1>
+                <h3 id="email" class="offset">jtt<a href="http://www.google.com/recaptcha/mailhide/d?k=01f1EnTmGoE9mi37OKJxVNqw==&amp;c=dPlxcgu_gS7R-gdjjroB3Q==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501f1EnTmGoE9mi37OKJxVNqw\75\75\46c\75dPlxcgu_gS7R-gdjjroB3Q\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@jsntsay.com</h3>
+                <ul id="vmenu">
+                    <li class="selected" id="profilebutton">Profile</li>
+                    <li id="workbutton"> Work </li>
+                    <li id="resumebutton"> Resume </li>
+                    <li id="pubbutton"> Publications </li>
+                </ul>
+                <ul id="sociallinks">
+                    <li><a href="https://twitter.com/jsntsay"><img src="img/twitter.png" class="icon"></a></li>
+                    <li><a href="https://github.com/jsntsay"><img src="img/github.png" class="icon"></a></li>
+                    <li><a href="http://www.linkedin.com/pub/jason-tsay/17/0/122"><img src="img/linkedin.png" class="icon"></a></li>
+                    <li><a href="https://plus.google.com/101105323702916978865"><img src="img/googleplus.jpg" class="icon"></a></li>
+                    <li><a href="https://www.facebook.com/jsntsay"><img src="img/fb.png" class="icon"></a></li>
+                </ul>
+                <div class="sidebox">
+                    <div class="avatar">
+                        <img src="img/avatar.jpg" id="avatar" class="img-responsive" alt="Jason Tsay">
+                    </div>
+                    <div class="infobox">
+                        
+                        <p>I'm Jason Tsay, a Software Engineering PhD student at Carnegie Mellon University. My research focuses on how software developers use social and technical information in their environment to inform their development decisions.
+                    </div>
+                </div>
+            </div>
+            <div id="worksection" class="section" data-anchor="work">
+                {% include navbar.html %}
+                {% include work.html %}
+            </div>
+            <div id="resumesection" class="section" data-anchor="resume">
+                {% include navbar.html %}
+                <br>
+                <a href="resume/resume.pdf"><h2>Resume</h2></a>
+                <br>
+                Currently I am not looking for full-time employment but am open to internships.
+            </div>
+            <div id="pubsection" class="section" data-anchor="publications">
+                {% include navbar.html %}
+                {% include pubs.html %}
+            </div>
+        </div>
+    </body>
 </html>
